@@ -1,0 +1,933 @@
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2:hover{
+    color: #85bdf3;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h3:hover{
+    color: #85bdf3;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#preload{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    background: #333;
+}
+
+.spiner-preloader{
+    width: 300px;
+    height: 70px;
+    color: azure;
+    font-size: 50px;
+    text-align: center;
+    margin: 150px auto 50px auto;
+    box-shadow: -1px 2px 2px #000;
+} 
+
+
+
+.loader-frame{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+}
+
+.loader1, .loader2{
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+
+.loader1{
+    width: 70px;
+    height: 70px;
+    border-top: 5px solid azure;
+    border-bottom: 5px solid azure;
+    animation: clockwisespin 2s linear 3;
+}
+
+.loader2{
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid darkturquoise;
+    border-right: 5px solid darkturquoise;
+    animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anticlockwisespin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/* navbar */
+
+.navbar-default {
+    border: none;
+    background: none;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    padding: 3px 15px;
+}
+
+.navbar-nav li a {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #85bdf3;
+}
+
+/* rotation */
+
+.text-rotate h3 {
+    left: 100px;
+    color: #e3e3e4;
+    font-size: 9px;
+    margin-top: 37px;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    /* Firefox */
+    -moz-transform: rotate(270deg);
+
+    /* IE */
+    -ms-transform: rotate(270deg);
+
+    /* Opera */
+    -o-transform: rotate(270deg);
+}
+
+.right-text-rotate h3 {
+    right: -82px;
+    color: #e3e3e4;
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 125px;
+    position: absolute;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    /* Firefox */
+    -moz-transform: rotate(270deg);
+
+    /* IE */
+    -ms-transform: rotate(270deg);
+
+    /* Opera */
+    -o-transform: rotate(270deg);
+}
+
+.right-icon-rotation i {
+    top: 193px;
+    right: 10px;
+    color: #ebebeb;
+    font-size: 20px;
+    margin-top: 200px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.right-bottom-rotate i {
+    margin-top: 250px;
+}
+
+.right-bottom-icon-rotate i {
+    margin-top: 300px;
+}
+
+
+
+
+/* slider */
+
+.banner-shadow {
+    box-shadow: 0 0 30px 6px #f2f2f2;
+}
+
+.carousel-indicators {
+    left: 10%;
+}
+
+.carousel-indicators .active {
+    background: #85bdf3;
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+}
+
+.text-left-negative {
+    color: #000;
+    bottom: 35%;
+    left: -18%;
+    position: absolute;
+    text-align: justify;
+}
+
+.text-left-negative h3 {
+    color: #85bdf2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.text-left-negative h2 {
+    margin-top: 0;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.text-left-negative p {
+    color: #989898;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.item {
+    padding-top: 45px;
+}
+
+.item img {
+    width: 80%;
+    height: 285px;
+    /* margin-left: 15px; */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+.num{
+    width:100px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: -29px;
+    text-align:center;
+    background-color: #85bdf3;
+}
+
+.num .active{
+    background-color: #85bdf3;
+}
+
+/* quotation */
+
+.surfing-quote {
+    margin-top: 120px;
+}
+
+.surfing-quote p {
+    color: #8a8a8a;
+    font-size: 26px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.surfing-quote p:hover{
+    color: #85bdf3;
+}
+
+.surfing-quote h3 {
+    color: #474747;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.surfing-tag {
+    width: 3px;
+    height: 100px;
+    display: block;
+    margin: 30px auto;
+    background: #5da8ef;
+}
+
+/* surf ride */
+
+.margin-30 {
+    margin-left: 15px;
+    margin-right: -30px;
+}
+
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.surfing-ride-wrap {
+    margin-bottom: 60px;
+}
+
+.surfing-ride-wrap .surfing-ride {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.surfing-content p {
+    margin: 0 auto;
+    color: #989898;
+    font-size: 14px;
+    padding: 0 100px;
+    text-align: justify;
+}
+
+.link-align a {
+    padding: 0 0 10px 0;
+    color: #000;
+    font-size: 12px;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 108px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    border-bottom: 2px solid #8dc1f3;
+    font-family: 'Oswald', sans-serif;
+    -webkit-transition: 0.3s all ease;
+}
+
+.thumbnail-negative {
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+.surfing-ride-thumbnail {
+    box-shadow: 0 0 30px 6px #f2f2f2;
+}
+
+
+/* surf board */
+
+.surfing-board {
+    height: 570px;
+    margin-top: -25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(images/surfing-board-img.jpg);
+}
+
+.surfing-board .surfboard-head-title {
+
+    margin-top: 0;
+}
+
+.surfboard-head-title h3 {
+    color: #85bdf2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.surfboard-head-title h2 {
+    margin-top: 0;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+
+
+
+/* surfboard slider */
+
+.surfboard-bg-clr {
+    width: 70%;
+    height: 210px;
+    margin-top: 30px;
+    position: relative;
+    background: #e5e5e5;
+}
+
+.single-item {
+    position: absolute;
+    top: -50%;
+}
+
+.single-item-ad{
+    position: absolute;
+    /* top: 0; */
+    /* text-align: center; */
+    bottom: 15px;
+    left: 0;
+    right: 0;
+}
+
+.single-item-ad img{
+    padding-top: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.playing-board-type-ad{
+    color: #000;
+    bottom: 50%;
+    top: 0;
+    left: 0;
+    /* right: -40%; */
+    /* bottom: 0; */
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+}
+.playing-board-type {
+    color: #000;
+    bottom: 50%;
+    right: -40%;
+    height: 70px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: justify;
+}
+
+.carousel-control {
+    width: 10%;
+    opacity: 0!important;
+}
+
+.playing-board-type p {
+    color: #989898;
+    font-size: 9px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.playing-board-type h2 {
+    color: #333333;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.surfboard-shopping {
+    color: #000;
+    bottom: 30%;
+    right: -33%;
+    height: 70px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: justify;
+}
+
+.surfboard-shopping .surfboard-buy {
+    color: #000;
+    font-size: 9px;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.surfboard-shopping .surfboard-buy:hover{
+    color: #85bdf3;
+}
+
+.surfboard-shopping .surfboard-price {
+    color: #85bdf3;
+    margin-top: 0;
+    font-size: 16px;
+    display: inherit;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+
+.surfboard-shopping a:hover {
+    text-decoration: none;
+}
+
+.surfboard-products a {
+    margin-left: 0;
+}
+
+.carousel-inner.onebyone-carosel {
+    margin: auto;
+    width: 93%;
+    margin-top: 30px;
+}
+
+.onebyone-carosel .active.left {
+    left: -33.33%;
+}
+
+.onebyone-carosel .active.right {
+    left: 33.33%;
+}
+
+.onebyone-carosel .next {
+    left: 33.33%;
+}
+
+.onebyone-carosel .prev {
+    left: -33.33%;
+}
+
+/* surfboard training */
+
+.field-counter {
+    color: #f9f9f9;
+    font-size: 130px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.surf-training {
+    margin-top: 300px;
+    margin-bottom: 80px;
+}
+
+.padding-20 {
+    padding: 0 20px;
+}
+
+.field-align {
+    margin-top: -83px;
+}
+
+
+.field-align a {
+    color: #000;
+    margin-left: 0;
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.field-align a:hover{
+    color: #85bdf3;
+}
+
+.tag {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: #8dc1f3;
+}
+
+.field-link-align a {
+    margin-left: 0;
+}
+
+.field-content {
+    margin-top: 30px;
+}
+
+.field-content p {
+    padding: 0;
+}
+
+/* surfing search */
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.background-surfing {
+    height: 650px;
+    margin-top: -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(images/surfing-board-img5.jpg);
+}
+
+.surfing-search-content p {
+    margin: 0 auto;
+    color: #989898;
+    font-size: 14px;
+    padding: 0 100px;
+}
+
+.input-padding-200 {
+    margin-top: 35px;
+    padding: 0 200px;
+}
+
+.input-group-btn {
+    padding: 0 12px;
+    background: #5da8ef;
+}
+
+.btn-default {
+    border: none;
+    background: #5da8ef;
+}
+
+.input-group-btn>.btn:active,
+.input-group-btn>.btn:focus,
+.input-group-btn>.btn:hover {
+    border: none;
+    background: none;
+}
+
+.input-group-btn i {
+    color: #fff;
+    font-size: 26px;
+}
+
+.form-control {
+    height: 0;
+    border-radius: 0;
+    padding: 22px 12px;
+    background: #f5f5f5;
+    border: 0px solid #f5f5f5;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-moz-placeholder {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.camp-head-title {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.camp-head-title h3 {
+    color: #bebebf;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.camp-address {
+    padding: 40px 76px;
+}
+
+.camp-address h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.camp-align-margin-0 a {
+    margin-top: 0;
+}
+
+.link-align a:hover,
+.camp-align-margin-0 a:hover {
+    color: #5da8ef;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 90px;
+}
+
+.footer-menus{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-menus ul li{
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.footer-menus li a {
+    color: #232428;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer-menus li a:hover{
+    color: #85bdf3;
+}
+
+.footer-menus li a:hover{
+    text-decoration: none;
+}
+
+
+.footer-icon i {
+    color: #ebebeb;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+@media all and (max-width: 767px) {
+   .margin-30{
+    margin-right: -15px;
+   }
+
+    .text-left-negative{
+        left: 30%;
+    }
+
+    .text-left-negative h3 {
+        text-align: center;
+    }
+    .text-left-negative h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-left-negative p {
+        display: none;
+    }
+
+    .carousel-indicators{
+        left: 47%;
+    }
+
+    .right-text-rotate h3{
+        display: none;
+    }
+    .right-icon-rotation{
+        display: none;
+    }
+
+    .surfing-ride img{
+        width: 90%;
+    }
+
+    .surfing-quote{
+        margin-top: 60px;
+    }
+
+    .surfing-quote p{
+        font-size: 20px;
+    }
+
+    
+
+    .padding-left-0{
+        margin-top: -210px;
+        padding-left: 15px;
+    }
+
+    .surfing-content p{
+        padding: 0 50px;
+    }
+
+    .link-align a{
+        margin-left: 50px;
+    }
+
+    .surfboard-head-title h2{
+        font-size: 36px;
+    }
+
+    .surfing-board .surfboard-head-title {
+        margin-top: 235px;
+    }
+
+    .surfboard-bg-clr{
+        width: 50%;
+        margin-top: 75px;
+    }
+
+    .field-counter{
+        font-size: 90px;
+    }
+
+    .field-align {
+        margin-top: -55px;
+    }
+
+
+    .field-align a{
+        font-size: 36px;
+    }
+
+    .surf-training {
+        margin-top: 730px;
+    }
+
+    .background-surfing{
+        margin-top: 0;
+    }
+
+    .field-thumbnail{
+        margin-top: 30px;
+    }
+
+    .surfboard-head-title{
+        margin-top: 0px;
+    }
+
+    .surfing-search-content p{
+        padding: 0 50px;
+    }
+
+    .input-padding-200{
+        padding: 0;
+    }
+
+    .camp-head-title h3{
+        padding: 0 50px;
+    }
+
+    .camp-address h2{
+        font-size: 26px;
+    }
+
+    .camp-address {
+        padding: 15px 56px;
+    }
+
+
+    .text-rotate h3{
+        display: none;
+    }
+    .num{
+        margin-top: 5px;
+        margin-left: 130px;
+    }
+
+    .slider img{
+        width: 93%;
+    }
+
+    .playing-board-type{
+        right: -53%;
+    }
+}
+
+@media all and (min-width: 767px) and (max-width: 992px) {
+    .surfboard-bg-clr{
+        margin-right: 70px;
+    }
+
+    .playing-board-type{
+        right: -33%;
+    }
+
+    .playing-board-type h2{
+        font-size: 12px;
+    }
+
+    .right-text-rotate h3{
+        right: 90px;
+    }
+
+    .margin-30{
+        margin-right: -15px;
+    }
+
+    .right-text-rotate h3{
+        display: none;
+    }
+
+    .right-icon-rotation{
+        display: none;
+    }
+
+    .text-rotate h3 {
+        left: 65px;
+        margin-top: 43px;
+    }
+
+    .padding-20{
+        margin-top: -35px;
+    }
+
+}
